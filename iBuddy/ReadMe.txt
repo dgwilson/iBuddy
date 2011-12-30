@@ -1,5 +1,14 @@
 
 
+
+
+
+
+The History is below
+--------------------
+
+
+
 https://devforums.apple.com/message/477239 <original>
 
 https://devforums.apple.com/message/544612
