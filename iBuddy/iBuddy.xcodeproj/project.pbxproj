@@ -123,8 +123,8 @@
 		E09FD102142CC21D00E377A1 /* shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
 		E09FD103142CC30800E377A1 /* KeepMeForNow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeepMeForNow.h; sourceTree = "<group>"; };
 		E09FD104142CC30800E377A1 /* KeepMeForNow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeepMeForNow.m; sourceTree = "<group>"; };
-		E0D2EF9514AE829200B4E7A0 /* iBuddy_700x700.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iBuddy_700x700.jpg; path = ../Images/iBuddy_700x700.jpg; sourceTree = "<group>"; };
-		E0D2EF9714AE829E00B4E7A0 /* iBuddy_700x700.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = iBuddy_700x700.psd; path = ../Images/iBuddy_700x700.psd; sourceTree = "<group>"; };
+		E0D2EF9514AE829200B4E7A0 /* iBuddy_700x700.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iBuddy_700x700.jpg; path = iBuddy/Images/iBuddy_700x700.jpg; sourceTree = "<group>"; };
+		E0D2EF9714AE829E00B4E7A0 /* iBuddy_700x700.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = iBuddy_700x700.psd; path = iBuddy/Images/iBuddy_700x700.psd; sourceTree = "<group>"; };
 		E0F0B0B71424706900F1B28B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E0F0B0E814249A3200F1B28B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E0F0B0FB14255B0200F1B28B /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
