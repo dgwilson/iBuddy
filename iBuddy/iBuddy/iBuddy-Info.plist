@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>Icon.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.davidgwilson.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSHumanReadableCopyright</key>
@@ -33,7 +33,7 @@
 	<key>SMPrivilegedExecutables</key>
 	<dict>
 		<key>com.davidgwilson.iBuddyHelper</key>
-		<string>identifier com.davidgwilson.iBuddyHelper and certificate leaf[subject.CN] = &quot;David Wilson Authorised&quot;</string>
+		<string>identifier com.davidgwilson.iBuddyHelper and certificate leaf[subject.CN] = "David Wilson Authorised"</string>
 	</dict>
 </dict>
 </plist>

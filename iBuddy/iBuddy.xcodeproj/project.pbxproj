@@ -26,6 +26,8 @@
 		E06831E314160DF000AC1EF0 /* iBuddy_Animated.gif in Resources */ = {isa = PBXBuildFile; fileRef = E06831E214160DF000AC1EF0 /* iBuddy_Animated.gif */; };
 		E079B4D2144417EA00B4CFF2 /* iBuddyControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E05BE5001414B7EE00C416CF /* iBuddyControl.m */; };
 		E079B4D41444180700B4CFF2 /* iBuddyDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E05BE5041414BA3F00C416CF /* iBuddyDevice.m */; };
+		E08275B814AE651500DBEBF0 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = E08275B714AE651500DBEBF0 /* Images */; };
+		E08275BC14AE6A1100DBEBF0 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E08275BB14AE6A1100DBEBF0 /* Icon.icns */; };
 		E09FD0F6142CBFF300E377A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E09FD0F4142CBFF300E377A1 /* InfoPlist.strings */; };
 		E09FD0F8142CBFF300E377A1 /* iBuddy_Driver.h in Headers */ = {isa = PBXBuildFile; fileRef = E09FD0F7142CBFF300E377A1 /* iBuddy_Driver.h */; };
 		E09FD0FA142CBFF300E377A1 /* iBuddy_Driver.c in Sources */ = {isa = PBXBuildFile; fileRef = E09FD0F9142CBFF300E377A1 /* iBuddy_Driver.c */; };
@@ -111,6 +113,8 @@
 		E05BE5031414BA3F00C416CF /* iBuddyDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBuddyDevice.h; path = iBuddy/iBuddyDevice.h; sourceTree = "<group>"; };
 		E05BE5041414BA3F00C416CF /* iBuddyDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBuddyDevice.m; path = iBuddy/iBuddyDevice.m; sourceTree = "<group>"; };
 		E06831E214160DF000AC1EF0 /* iBuddy_Animated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = iBuddy_Animated.gif; sourceTree = "<group>"; };
+		E08275B714AE651500DBEBF0 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = ../Images; sourceTree = "<group>"; };
+		E08275BB14AE6A1100DBEBF0 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		E09FD0EF142CBFF300E377A1 /* iBuddy_Driver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBuddy_Driver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09FD0F0142CBFF300E377A1 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
 		E09FD0F3142CBFF300E377A1 /* iBuddy_Driver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBuddy_Driver-Info.plist"; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				E0131544143FF51B00E8A09C /* common.c */,
 				E0F0B10F14255BED00F1B28B /* Common */,
 				E050D38A140E1A79004CAE37 /* iBuddy */,
+				E08275BA14AE69E500DBEBF0 /* Resources */,
+				E08275B714AE651500DBEBF0 /* Images */,
 				E0F0B10414255B4E00F1B28B /* iBuddycmd */,
 				E0F0B11714255CCB00F1B28B /* iBuddyHelper */,
 				E09FD0F1142CBFF300E377A1 /* iBuddy_Driver */,
@@ -254,6 +260,14 @@
 				E02356311448D3CF0087E307 /* iBuddyCmdUtility.sh */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E08275BA14AE69E500DBEBF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E08275BB14AE6A1100DBEBF0 /* Icon.icns */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E09FD0F1142CBFF300E377A1 /* iBuddy_Driver */ = {
@@ -452,6 +466,8 @@
 				E06831E314160DF000AC1EF0 /* iBuddy_Animated.gif in Resources */,
 				E003170B1437CADC003AE445 /* iBuddyKextUtility.sh in Resources */,
 				E02356321448D3CF0087E307 /* iBuddyCmdUtility.sh in Resources */,
+				E08275B814AE651500DBEBF0 /* Images in Resources */,
+				E08275BC14AE6A1100DBEBF0 /* Icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
