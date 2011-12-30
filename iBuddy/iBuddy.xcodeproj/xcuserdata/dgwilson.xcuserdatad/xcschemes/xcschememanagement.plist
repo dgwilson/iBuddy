@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>com.davidgwilson.iBuddyHelper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>iBuddy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>iBuddy_Driver.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>iBuddycmd.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E050D37F140E1A79004CAE37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E09FD0EE142CBFF300E377A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0F0B0B41424706900F1B28B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0F0B0C5142470A900F1B28B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0F0B10014255B4E00F1B28B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0F0B11314255CCB00F1B28B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'iBuddyHelper' target in the 'iBuddyHelper' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif

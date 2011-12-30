@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.davidgwilson.iBuddyHelper</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>iBuddyHelper</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>SMAuthorizedClients</key>
+	<array>
+		<string>identifier com.davidgwilson.iBuddy and certificate leaf[subject.CN] = &quot;David Wilson Authorised&quot;</string>
+		<string>identifier com.davidgwilson.iBuddy and certificate leaf[subject.CN] = &quot;David Wilson Authorised for Development&quot;</string>
+	</array>
+</dict>
+</plist>

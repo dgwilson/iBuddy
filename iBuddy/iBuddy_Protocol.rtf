@@ -1,0 +1,94 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf250
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+{\info
+{\author David G. Wilson}
+{\*\copyright David G. Wilson}}\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs26 \cf0     | |   |   +-o i-Buddy@fd130000  <class IOUSBDevice, id 0x10000a834, registered, matched, active, busy 0 (1184 ms), retain 9>\
+    | |   |     | \{\
+    | |   |     |   "sessionID" = 122991261922846\
+    | |   |     |   "iManufacturer" = 0\
+    | |   |     |   "bNumConfigurations" = 1\
+    | |   |     |   "idProduct" = 2\
+    | |   |     |   "bcdDevice" = 256\
+    | |   |     |   "Bus Power Available" = 250\
+    | |   |     |   "bMaxPacketSize0" = 8\
+    | |   |     |   "USB Product Name" = "i-Buddy"\
+    | |   |     |   "iProduct" = 2\
+    | |   |     |   "iSerialNumber" = 0\
+    | |   |     |   "USB Address" = 5\
+    | |   |     |   "bDeviceClass" = 0\
+    | |   |     |   "locationID" = 18446744073660465152\
+    | |   |     |   "bDeviceSubClass" = 0\
+    | |   |     |   "IOUserClientClass" = "IOUSBDeviceUserClientV2"\
+    | |   |     |   "PortNum" = 3\
+    | |   |     |   "IOCFPlugInTypes" = \{"9dc7b780-9ec0-11d4-a54f-000a27052861"="IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"\}\
+    | |   |     |   "bDeviceProtocol" = 0\
+    | |   |     |   "Device Speed" = 0\
+    | |   |     |   "idVendor" = 4400\
+    | |   |     |   "Requested Power" = 50\
+    | |   |     |   "IOGeneralInterest" = "IOCommand is not serializable"\
+    | |   |     |   "Low Power Displayed" = No\
+    | |   |     | \}\
+\
+\
+\
+        Descriptor Version Number:   0x0110\
+        Device Class:   0   (Composite)\
+        Device Subclass:   0\
+        Device Protocol:   0\
+        Device MaxPacketSize:   8\
+        Device VendorID/ProductID:   0x1130/0x0002   (Tenx Technology, Inc.)\
+        Device Version Number:   0x0100\
+        Number of Configurations:   1\
+        Manufacturer String:   0 (none)\
+        Product String:   2 "i-Buddy"\
+        Serial Number String:   0 (none)\
+\
+\
+The i-Buddy is controlled by sending an 8-byte output report to\
+the second USB HID device.\
+\
+The first 7 bytes of this output report are always the same; the\
+last byte controls the state of the i-Buddy.\
+\
+The bit configuration is as follows:\
+\
+  +-----+-----+-----+-----+-----+-----+-----+-----+\
+  |  7  |  6  |  5  |  4  |  3  |  2  |  1  |  0  |\
+  |     |     |     |     |     |     |     |     |\
+  |heart|    head color   |   wings   |  turning  |\
+  +-----+-----+-----+-----+-----+-----+-----+-----+\
+\
+bits 0-1: position of the body\
+\
+    1 = left\
+    2 = right\
+    0 = middle, but only after right\
+    3 = a little to the middle, but only after right\
+\
+bits 2-3: position of the wings\
+\
+    1 = wings high\
+    2 = wings low\
+\
+bits 4-6: color of the head, in terms of the RGB leds inside\
+\
+        bits   lights   color\
+        ---     ---     ---\
+    0   000     BGR     white\
+    1   001     BG.     cyan\
+    2   010     B.R     purple\
+    3   011     B..     blue\
+    4   100     .GR     yellow\
+    5   101     .G.     green\
+    6   110     ..R     red\
+    7   111     ...     off\
+\
+bit 7: heart light\
+\
+    0 = on\
+    1 = off}

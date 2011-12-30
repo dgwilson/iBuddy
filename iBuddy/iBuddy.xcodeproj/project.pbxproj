@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E003170B1437CADC003AE445 /* iBuddyKextUtility.sh in Resources */ = {isa = PBXBuildFile; fileRef = E003170A1437CADC003AE445 /* iBuddyKextUtility.sh */; };
+		E010F50E144425DD00942806 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E050D387140E1A79004CAE37 /* AppKit.framework */; };
+		E0131545143FF51B00E8A09C /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = E0131544143FF51B00E8A09C /* common.c */; };
+		E02356321448D3CF0087E307 /* iBuddyCmdUtility.sh in Resources */ = {isa = PBXBuildFile; fileRef = E02356311448D3CF0087E307 /* iBuddyCmdUtility.sh */; };
+		E02356341448D8FE0087E307 /* iBuddycmd in CopyFiles */ = {isa = PBXBuildFile; fileRef = E0F0B10114255B4E00F1B28B /* iBuddycmd */; };
+		E050D385140E1A79004CAE37 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E050D384140E1A79004CAE37 /* Cocoa.framework */; };
+		E050D38F140E1A79004CAE37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E050D38D140E1A79004CAE37 /* InfoPlist.strings */; };
+		E050D391140E1A79004CAE37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E050D390140E1A79004CAE37 /* main.m */; };
+		E050D395140E1A79004CAE37 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E050D393140E1A79004CAE37 /* Credits.rtf */; };
+		E050D398140E1A79004CAE37 /* iBuddyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E050D397140E1A79004CAE37 /* iBuddyAppDelegate.m */; };
+		E050D39B140E1A79004CAE37 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E050D399140E1A79004CAE37 /* MainMenu.xib */; };
+		E050D3AA140E1AB0004CAE37 /* iBuddy_Protocol.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E050D3A9140E1AB0004CAE37 /* iBuddy_Protocol.rtf */; };
+		E050D3B4140E1F49004CAE37 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E050D3B3140E1F49004CAE37 /* IOKit.framework */; };
+		E05BE5011414B7EE00C416CF /* iBuddyControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E05BE5001414B7EE00C416CF /* iBuddyControl.m */; };
+		E05BE5051414BA3F00C416CF /* iBuddyDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E05BE5041414BA3F00C416CF /* iBuddyDevice.m */; };
+		E062AC061425D3FC00D03F49 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F0B0FB14255B0200F1B28B /* ServiceManagement.framework */; };
+		E06831E314160DF000AC1EF0 /* iBuddy_Animated.gif in Resources */ = {isa = PBXBuildFile; fileRef = E06831E214160DF000AC1EF0 /* iBuddy_Animated.gif */; };
+		E079B4D2144417EA00B4CFF2 /* iBuddyControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E05BE5001414B7EE00C416CF /* iBuddyControl.m */; };
+		E079B4D41444180700B4CFF2 /* iBuddyDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E05BE5041414BA3F00C416CF /* iBuddyDevice.m */; };
+		E09FD0F6142CBFF300E377A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E09FD0F4142CBFF300E377A1 /* InfoPlist.strings */; };
+		E09FD0F8142CBFF300E377A1 /* iBuddy_Driver.h in Headers */ = {isa = PBXBuildFile; fileRef = E09FD0F7142CBFF300E377A1 /* iBuddy_Driver.h */; };
+		E09FD0FA142CBFF300E377A1 /* iBuddy_Driver.c in Sources */ = {isa = PBXBuildFile; fileRef = E09FD0F9142CBFF300E377A1 /* iBuddy_Driver.c */; };
+		E09FD101142CC0FA00E377A1 /* iBuddy_Driver.kext in CopyFiles */ = {isa = PBXBuildFile; fileRef = E09FD0EF142CBFF300E377A1 /* iBuddy_Driver.kext */; };
+		E0F0B0E914249A3200F1B28B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F0B0E814249A3200F1B28B /* Security.framework */; };
+		E0F0B0FC14255B0200F1B28B /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F0B0FB14255B0200F1B28B /* ServiceManagement.framework */; };
+		E0F0B10314255B4E00F1B28B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F0B0B71424706900F1B28B /* Foundation.framework */; };
+		E0F0B10614255B4E00F1B28B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F0B10514255B4E00F1B28B /* main.m */; };
+		E0F0B10A14255B4E00F1B28B /* iBuddycmd.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E0F0B10914255B4E00F1B28B /* iBuddycmd.1 */; };
+		E0F0B10E14255B6000F1B28B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E050D3B3140E1F49004CAE37 /* IOKit.framework */; };
+		E0F0B11614255CCB00F1B28B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F0B0B71424706900F1B28B /* Foundation.framework */; };
+		E0F0B11914255CCB00F1B28B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F0B11814255CCB00F1B28B /* main.m */; };
+		E0F0B12B14256C6000F1B28B /* com.davidgwilson.iBuddyHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = E0F0B11414255CCB00F1B28B /* com.davidgwilson.iBuddyHelper */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0F0B1231425604800F1B28B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E050D377140E1A79004CAE37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0F0B11314255CCB00F1B28B;
+			remoteInfo = iBuddyHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E09FD100142CC0EB00E377A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				E02356341448D8FE0087E307 /* iBuddycmd in CopyFiles */,
+				E09FD101142CC0FA00E377A1 /* iBuddy_Driver.kext in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F0B0FF14255B4E00F1B28B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				E0F0B10A14255B4E00F1B28B /* iBuddycmd.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		E0F0B12A14256C3D00F1B28B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				E0F0B12B14256C6000F1B28B /* com.davidgwilson.iBuddyHelper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E003170A1437CADC003AE445 /* iBuddyKextUtility.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = iBuddyKextUtility.sh; sourceTree = "<group>"; };
+		E0131543143FF51B00E8A09C /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		E0131544143FF51B00E8A09C /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		E02356311448D3CF0087E307 /* iBuddyCmdUtility.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = iBuddyCmdUtility.sh; sourceTree = "<group>"; };
+		E026107E144190C2000865AF /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		E050D380140E1A79004CAE37 /* iBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E050D384140E1A79004CAE37 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E050D387140E1A79004CAE37 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E050D388140E1A79004CAE37 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E050D38C140E1A79004CAE37 /* iBuddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBuddy-Info.plist"; sourceTree = "<group>"; };
+		E050D38E140E1A79004CAE37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E050D390140E1A79004CAE37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E050D392140E1A79004CAE37 /* iBuddy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBuddy-Prefix.pch"; sourceTree = "<group>"; };
+		E050D394140E1A79004CAE37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E050D396140E1A79004CAE37 /* iBuddyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBuddyAppDelegate.h; sourceTree = "<group>"; };
+		E050D397140E1A79004CAE37 /* iBuddyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBuddyAppDelegate.m; sourceTree = "<group>"; };
+		E050D39A140E1A79004CAE37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E050D3A1140E1A89004CAE37 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		E050D3A9140E1AB0004CAE37 /* iBuddy_Protocol.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = iBuddy_Protocol.rtf; sourceTree = "<group>"; };
+		E050D3B3140E1F49004CAE37 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		E05BE4FF1414B7EE00C416CF /* iBuddyControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBuddyControl.h; path = iBuddy/iBuddyControl.h; sourceTree = "<group>"; };
+		E05BE5001414B7EE00C416CF /* iBuddyControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBuddyControl.m; path = iBuddy/iBuddyControl.m; sourceTree = "<group>"; };
+		E05BE5031414BA3F00C416CF /* iBuddyDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBuddyDevice.h; path = iBuddy/iBuddyDevice.h; sourceTree = "<group>"; };
+		E05BE5041414BA3F00C416CF /* iBuddyDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBuddyDevice.m; path = iBuddy/iBuddyDevice.m; sourceTree = "<group>"; };
+		E06831E214160DF000AC1EF0 /* iBuddy_Animated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = iBuddy_Animated.gif; sourceTree = "<group>"; };
+		E09FD0EF142CBFF300E377A1 /* iBuddy_Driver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBuddy_Driver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09FD0F0142CBFF300E377A1 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		E09FD0F3142CBFF300E377A1 /* iBuddy_Driver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBuddy_Driver-Info.plist"; sourceTree = "<group>"; };
+		E09FD0F5142CBFF300E377A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E09FD0F7142CBFF300E377A1 /* iBuddy_Driver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBuddy_Driver.h; sourceTree = "<group>"; };
+		E09FD0F9142CBFF300E377A1 /* iBuddy_Driver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = iBuddy_Driver.c; sourceTree = "<group>"; };
+		E09FD0FB142CBFF300E377A1 /* iBuddy_Driver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBuddy_Driver-Prefix.pch"; sourceTree = "<group>"; };
+		E09FD102142CC21D00E377A1 /* shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
+		E09FD103142CC30800E377A1 /* KeepMeForNow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeepMeForNow.h; sourceTree = "<group>"; };
+		E09FD104142CC30800E377A1 /* KeepMeForNow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeepMeForNow.m; sourceTree = "<group>"; };
+		E0F0B0B71424706900F1B28B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0F0B0E814249A3200F1B28B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E0F0B0FB14255B0200F1B28B /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		E0F0B10114255B4E00F1B28B /* iBuddycmd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iBuddycmd; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F0B10514255B4E00F1B28B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0F0B10814255B4E00F1B28B /* iBuddycmd-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBuddycmd-Prefix.pch"; sourceTree = "<group>"; };
+		E0F0B10914255B4E00F1B28B /* iBuddycmd.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = iBuddycmd.1; sourceTree = "<group>"; };
+		E0F0B11414255CCB00F1B28B /* com.davidgwilson.iBuddyHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.davidgwilson.iBuddyHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F0B11814255CCB00F1B28B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0F0B11B14255CCB00F1B28B /* iBuddyHelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBuddyHelper-Prefix.pch"; sourceTree = "<group>"; };
+		E0F0B12114255D7900F1B28B /* iBuddyHelper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iBuddyHelper-Info.plist"; sourceTree = "<group>"; };
+		E0F0B12214255D7900F1B28B /* iBuddyHelper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iBuddyHelper-Launchd.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E050D37D140E1A79004CAE37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E050D3B4140E1F49004CAE37 /* IOKit.framework in Frameworks */,
+				E0F0B0E914249A3200F1B28B /* Security.framework in Frameworks */,
+				E0F0B0FC14255B0200F1B28B /* ServiceManagement.framework in Frameworks */,
+				E050D385140E1A79004CAE37 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E09FD0EA142CBFF300E377A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F0B0FE14255B4E00F1B28B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F0B10314255B4E00F1B28B /* Foundation.framework in Frameworks */,
+				E0F0B10E14255B6000F1B28B /* IOKit.framework in Frameworks */,
+				E010F50E144425DD00942806 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F0B11114255CCB00F1B28B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F0B11614255CCB00F1B28B /* Foundation.framework in Frameworks */,
+				E062AC061425D3FC00D03F49 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E050D375140E1A79004CAE37 = {
+			isa = PBXGroup;
+			children = (
+				E050D3A1140E1A89004CAE37 /* ReadMe.txt */,
+				E050D3A9140E1AB0004CAE37 /* iBuddy_Protocol.rtf */,
+				E09FD102142CC21D00E377A1 /* shared.h */,
+				E0131543143FF51B00E8A09C /* common.h */,
+				E0131544143FF51B00E8A09C /* common.c */,
+				E0F0B10F14255BED00F1B28B /* Common */,
+				E050D38A140E1A79004CAE37 /* iBuddy */,
+				E0F0B10414255B4E00F1B28B /* iBuddycmd */,
+				E0F0B11714255CCB00F1B28B /* iBuddyHelper */,
+				E09FD0F1142CBFF300E377A1 /* iBuddy_Driver */,
+				E050D383140E1A79004CAE37 /* Frameworks */,
+				E050D381140E1A79004CAE37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E050D381140E1A79004CAE37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E050D380140E1A79004CAE37 /* iBuddy.app */,
+				E0F0B10114255B4E00F1B28B /* iBuddycmd */,
+				E0F0B11414255CCB00F1B28B /* com.davidgwilson.iBuddyHelper */,
+				E09FD0EF142CBFF300E377A1 /* iBuddy_Driver.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E050D383140E1A79004CAE37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E050D384140E1A79004CAE37 /* Cocoa.framework */,
+				E050D3B3140E1F49004CAE37 /* IOKit.framework */,
+				E0F0B0E814249A3200F1B28B /* Security.framework */,
+				E0F0B0FB14255B0200F1B28B /* ServiceManagement.framework */,
+				E050D386140E1A79004CAE37 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E050D386140E1A79004CAE37 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E050D387140E1A79004CAE37 /* AppKit.framework */,
+				E050D388140E1A79004CAE37 /* CoreData.framework */,
+				E0F0B0B71424706900F1B28B /* Foundation.framework */,
+				E09FD0F0142CBFF300E377A1 /* Kernel.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E050D38A140E1A79004CAE37 /* iBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				E050D396140E1A79004CAE37 /* iBuddyAppDelegate.h */,
+				E050D397140E1A79004CAE37 /* iBuddyAppDelegate.m */,
+				E09FD103142CC30800E377A1 /* KeepMeForNow.h */,
+				E09FD104142CC30800E377A1 /* KeepMeForNow.m */,
+				E050D399140E1A79004CAE37 /* MainMenu.xib */,
+				E050D38B140E1A79004CAE37 /* Supporting Files */,
+			);
+			path = iBuddy;
+			sourceTree = "<group>";
+		};
+		E050D38B140E1A79004CAE37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E06831E214160DF000AC1EF0 /* iBuddy_Animated.gif */,
+				E050D38C140E1A79004CAE37 /* iBuddy-Info.plist */,
+				E050D38D140E1A79004CAE37 /* InfoPlist.strings */,
+				E050D390140E1A79004CAE37 /* main.m */,
+				E050D392140E1A79004CAE37 /* iBuddy-Prefix.pch */,
+				E050D393140E1A79004CAE37 /* Credits.rtf */,
+				E003170A1437CADC003AE445 /* iBuddyKextUtility.sh */,
+				E02356311448D3CF0087E307 /* iBuddyCmdUtility.sh */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E09FD0F1142CBFF300E377A1 /* iBuddy_Driver */ = {
+			isa = PBXGroup;
+			children = (
+				E026107E144190C2000865AF /* ReadMe.txt */,
+				E09FD0F7142CBFF300E377A1 /* iBuddy_Driver.h */,
+				E09FD0F9142CBFF300E377A1 /* iBuddy_Driver.c */,
+				E09FD0F2142CBFF300E377A1 /* Supporting Files */,
+			);
+			path = iBuddy_Driver;
+			sourceTree = "<group>";
+		};
+		E09FD0F2142CBFF300E377A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E09FD0F3142CBFF300E377A1 /* iBuddy_Driver-Info.plist */,
+				E09FD0F4142CBFF300E377A1 /* InfoPlist.strings */,
+				E09FD0FB142CBFF300E377A1 /* iBuddy_Driver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0F0B10414255B4E00F1B28B /* iBuddycmd */ = {
+			isa = PBXGroup;
+			children = (
+				E0F0B10514255B4E00F1B28B /* main.m */,
+				E0F0B10914255B4E00F1B28B /* iBuddycmd.1 */,
+				E0F0B10714255B4E00F1B28B /* Supporting Files */,
+			);
+			path = iBuddycmd;
+			sourceTree = "<group>";
+		};
+		E0F0B10714255B4E00F1B28B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0F0B10814255B4E00F1B28B /* iBuddycmd-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0F0B10F14255BED00F1B28B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E05BE5031414BA3F00C416CF /* iBuddyDevice.h */,
+				E05BE5041414BA3F00C416CF /* iBuddyDevice.m */,
+				E05BE4FF1414B7EE00C416CF /* iBuddyControl.h */,
+				E05BE5001414B7EE00C416CF /* iBuddyControl.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		E0F0B11714255CCB00F1B28B /* iBuddyHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E0F0B12114255D7900F1B28B /* iBuddyHelper-Info.plist */,
+				E0F0B12214255D7900F1B28B /* iBuddyHelper-Launchd.plist */,
+				E0F0B11814255CCB00F1B28B /* main.m */,
+				E0F0B11A14255CCB00F1B28B /* Supporting Files */,
+			);
+			path = iBuddyHelper;
+			sourceTree = "<group>";
+		};
+		E0F0B11A14255CCB00F1B28B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0F0B11B14255CCB00F1B28B /* iBuddyHelper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E09FD0EB142CBFF300E377A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09FD0F8142CBFF300E377A1 /* iBuddy_Driver.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E050D37F140E1A79004CAE37 /* iBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E050D39E140E1A79004CAE37 /* Build configuration list for PBXNativeTarget "iBuddy" */;
+			buildPhases = (
+				E050D37C140E1A79004CAE37 /* Sources */,
+				E050D37D140E1A79004CAE37 /* Frameworks */,
+				E050D37E140E1A79004CAE37 /* Resources */,
+				E0F0B12A14256C3D00F1B28B /* CopyFiles */,
+				E09FD100142CC0EB00E377A1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0F0B1241425604800F1B28B /* PBXTargetDependency */,
+			);
+			name = iBuddy;
+			productName = iBuddy;
+			productReference = E050D380140E1A79004CAE37 /* iBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E09FD0EE142CBFF300E377A1 /* iBuddy_Driver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E09FD0FE142CBFF300E377A1 /* Build configuration list for PBXNativeTarget "iBuddy_Driver" */;
+			buildPhases = (
+				E09FD0E9142CBFF300E377A1 /* Sources */,
+				E09FD0EA142CBFF300E377A1 /* Frameworks */,
+				E09FD0EB142CBFF300E377A1 /* Headers */,
+				E09FD0EC142CBFF300E377A1 /* Resources */,
+				E09FD0ED142CBFF300E377A1 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iBuddy_Driver;
+			productName = iBuddy_Driver;
+			productReference = E09FD0EF142CBFF300E377A1 /* iBuddy_Driver.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		E0F0B10014255B4E00F1B28B /* iBuddycmd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0F0B10B14255B4E00F1B28B /* Build configuration list for PBXNativeTarget "iBuddycmd" */;
+			buildPhases = (
+				E0F0B0FD14255B4E00F1B28B /* Sources */,
+				E0F0B0FE14255B4E00F1B28B /* Frameworks */,
+				E0F0B0FF14255B4E00F1B28B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iBuddycmd;
+			productName = iBuddycmd;
+			productReference = E0F0B10114255B4E00F1B28B /* iBuddycmd */;
+			productType = "com.apple.product-type.tool";
+		};
+		E0F0B11314255CCB00F1B28B /* com.davidgwilson.iBuddyHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0F0B11E14255CCB00F1B28B /* Build configuration list for PBXNativeTarget "com.davidgwilson.iBuddyHelper" */;
+			buildPhases = (
+				E0F0B11014255CCB00F1B28B /* Sources */,
+				E0F0B11114255CCB00F1B28B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.davidgwilson.iBuddyHelper;
+			productName = iBuddyHelper;
+			productReference = E0F0B11414255CCB00F1B28B /* com.davidgwilson.iBuddyHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E050D377140E1A79004CAE37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "David G. WIlson";
+			};
+			buildConfigurationList = E050D37A140E1A79004CAE37 /* Build configuration list for PBXProject "iBuddy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E050D375140E1A79004CAE37;
+			productRefGroup = E050D381140E1A79004CAE37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E050D37F140E1A79004CAE37 /* iBuddy */,
+				E0F0B10014255B4E00F1B28B /* iBuddycmd */,
+				E0F0B11314255CCB00F1B28B /* com.davidgwilson.iBuddyHelper */,
+				E09FD0EE142CBFF300E377A1 /* iBuddy_Driver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E050D37E140E1A79004CAE37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E050D38F140E1A79004CAE37 /* InfoPlist.strings in Resources */,
+				E050D395140E1A79004CAE37 /* Credits.rtf in Resources */,
+				E050D39B140E1A79004CAE37 /* MainMenu.xib in Resources */,
+				E050D3AA140E1AB0004CAE37 /* iBuddy_Protocol.rtf in Resources */,
+				E06831E314160DF000AC1EF0 /* iBuddy_Animated.gif in Resources */,
+				E003170B1437CADC003AE445 /* iBuddyKextUtility.sh in Resources */,
+				E02356321448D3CF0087E307 /* iBuddyCmdUtility.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E09FD0EC142CBFF300E377A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09FD0F6142CBFF300E377A1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		E09FD0ED142CBFF300E377A1 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E050D37C140E1A79004CAE37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E050D391140E1A79004CAE37 /* main.m in Sources */,
+				E050D398140E1A79004CAE37 /* iBuddyAppDelegate.m in Sources */,
+				E05BE5011414B7EE00C416CF /* iBuddyControl.m in Sources */,
+				E05BE5051414BA3F00C416CF /* iBuddyDevice.m in Sources */,
+				E0131545143FF51B00E8A09C /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E09FD0E9142CBFF300E377A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09FD0FA142CBFF300E377A1 /* iBuddy_Driver.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F0B0FD14255B4E00F1B28B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F0B10614255B4E00F1B28B /* main.m in Sources */,
+				E079B4D2144417EA00B4CFF2 /* iBuddyControl.m in Sources */,
+				E079B4D41444180700B4CFF2 /* iBuddyDevice.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F0B11014255CCB00F1B28B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F0B11914255CCB00F1B28B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0F0B1241425604800F1B28B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0F0B11314255CCB00F1B28B /* com.davidgwilson.iBuddyHelper */;
+			targetProxy = E0F0B1231425604800F1B28B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E050D38D140E1A79004CAE37 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E050D38E140E1A79004CAE37 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E050D393140E1A79004CAE37 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E050D394140E1A79004CAE37 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E050D399140E1A79004CAE37 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E050D39A140E1A79004CAE37 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E09FD0F4142CBFF300E377A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E09FD0F5142CBFF300E377A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E050D39C140E1A79004CAE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "David Wilson Authorised";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E050D39D140E1A79004CAE37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "David Wilson Authorised";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E050D39F140E1A79004CAE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBuddy/iBuddy-Prefix.pch";
+				INFOPLIST_FILE = "iBuddy/iBuddy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E050D3A0140E1A79004CAE37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBuddy/iBuddy-Prefix.pch";
+				INFOPLIST_FILE = "iBuddy/iBuddy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E09FD0FC142CBFF300E377A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBuddy_Driver/iBuddy_Driver-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "iBuddy_Driver/iBuddy_Driver-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULE_NAME = com.davidgwilson.iBuddy_Driver;
+				MODULE_START = iBuddy_Driver_start;
+				MODULE_STOP = iBuddy_Driver_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		E09FD0FD142CBFF300E377A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBuddy_Driver/iBuddy_Driver-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "iBuddy_Driver/iBuddy_Driver-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULE_NAME = com.davidgwilson.iBuddy_Driver;
+				MODULE_START = iBuddy_Driver_start;
+				MODULE_STOP = iBuddy_Driver_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		E0F0B10C14255B4E00F1B28B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBuddycmd/iBuddycmd-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E0F0B10D14255B4E00F1B28B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBuddycmd/iBuddycmd-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E0F0B11F14255CCB00F1B28B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBuddyHelper/iBuddyHelper-Prefix.pch";
+				INFOPLIST_FILE = "iBuddyHelper/iBuddyHelper-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"iBuddyHelper/iBuddyHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"iBuddyHelper/iBuddyHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = com.davidgwilson.iBuddyHelper;
+			};
+			name = Debug;
+		};
+		E0F0B12014255CCB00F1B28B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBuddyHelper/iBuddyHelper-Prefix.pch";
+				INFOPLIST_FILE = "iBuddyHelper/iBuddyHelper-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"iBuddyHelper/iBuddyHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"iBuddyHelper/iBuddyHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = com.davidgwilson.iBuddyHelper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E050D37A140E1A79004CAE37 /* Build configuration list for PBXProject "iBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E050D39C140E1A79004CAE37 /* Debug */,
+				E050D39D140E1A79004CAE37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E050D39E140E1A79004CAE37 /* Build configuration list for PBXNativeTarget "iBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E050D39F140E1A79004CAE37 /* Debug */,
+				E050D3A0140E1A79004CAE37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E09FD0FE142CBFF300E377A1 /* Build configuration list for PBXNativeTarget "iBuddy_Driver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E09FD0FC142CBFF300E377A1 /* Debug */,
+				E09FD0FD142CBFF300E377A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0F0B10B14255B4E00F1B28B /* Build configuration list for PBXNativeTarget "iBuddycmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0F0B10C14255B4E00F1B28B /* Debug */,
+				E0F0B10D14255B4E00F1B28B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0F0B11E14255CCB00F1B28B /* Build configuration list for PBXNativeTarget "com.davidgwilson.iBuddyHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0F0B11F14255CCB00F1B28B /* Debug */,
+				E0F0B12014255CCB00F1B28B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E050D377140E1A79004CAE37 /* Project object */;
+}
