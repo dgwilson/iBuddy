@@ -56,12 +56,15 @@ and see below for other commands that can be used.
  
 Development note
 - This project is set up such that compiling iBuddy will compile all of its dependant components as they are included in the GUI application. The only component that needs to be distributed form the build is the GUI application.
+- Achievement unlocked - uploaded to github 31 December 2011
 
 
 Known Issues
 - Help is not currently functioning for iBuddycmd
 
-Git non tracking information - what a pain!
+
+
+Git non tracking information - what a pain! - with all of the integration into xcode and this is still required to be manually done!
 
 David-Wilsons-MBP:iBuddy dgwilson$ git rm --cached iBuddy/iBuddy.xcodeproj/project.xcworkspace/xcuserdata/dgwilson.xcuserdatad/ -r
 rm 'iBuddy/iBuddy.xcodeproj/project.xcworkspace/xcuserdata/dgwilson.xcuserdatad/UserInterfaceState.xcuserstate'
