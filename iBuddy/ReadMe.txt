@@ -61,3 +61,26 @@ Development note
 Known Issues
 - Help is not currently functioning for iBuddycmd
 
+Git non tracking information - what a pain!
+
+David-Wilsons-MBP:iBuddy dgwilson$ git rm --cached iBuddy/iBuddy.xcodeproj/project.xcworkspace/xcuserdata/dgwilson.xcuserdatad/ -r
+rm 'iBuddy/iBuddy.xcodeproj/project.xcworkspace/xcuserdata/dgwilson.xcuserdatad/UserInterfaceState.xcuserstate'
+rm 'iBuddy/iBuddy.xcodeproj/project.xcworkspace/xcuserdata/dgwilson.xcuserdatad/WorkspaceSettings.xcsettings'
+David-Wilsons-MBP:iBuddy dgwilson$ git commit -m "Removed file that shouldn't be tracked"
+[master 29d3586] Removed file that shouldn't be tracked
+ Committer: David Wilson <dgwilson@David-Wilsons-MBP.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 22 deletions(-)
+ delete mode 100644 iBuddy/iBuddy.xcodeproj/project.xcworkspace/xcuserdata/dgwilson.xcuserdatad/UserInterfaceState.xcuserstate
+ delete mode 100644 iBuddy/iBuddy.xcodeproj/project.xcworkspace/xcuserdata/dgwilson.xcuserdatad/WorkspaceSettings.xcsettings
+
