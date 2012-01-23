@@ -50,6 +50,7 @@ NSMutableArray			*iBuddyDeviceArray;
 	mach_port_t				masterPort = 0;					// requires <mach/mach.h>
 	CFMutableDictionaryRef 	matchingDictionary1 = 0;		// requires <IOKit/IOKitLib.h>
 	CFMutableDictionaryRef 	matchingDictionary2 = 0;		// requires <IOKit/IOKitLib.h>
+	CFMutableDictionaryRef 	matchingDictionary3 = 0;		// requires <IOKit/IOKitLib.h>
 	CFNumberRef				numberRef;
 	CFRunLoopSourceRef      runLoopSource;
 
@@ -57,6 +58,8 @@ NSMutableArray			*iBuddyDeviceArray;
 	int iBuddy_VendorId_num = 0x1130;
 	int iBuddy_ProductId_1_num = 0x0001;			// changed from 0002 for Dennis Hah - 22Nov11 (will also need to change kext)
 	int iBuddy_ProductId_2_num = 0x0002;
+	int iBuddy_ProductId_3_num = 0x0006;
+	
 	
 	deviceCount = 0;
 	iBuddyDeviceArray = [[[NSMutableArray alloc] init] retain];
@@ -80,6 +83,7 @@ NSMutableArray			*iBuddyDeviceArray;
 																	// IOUSBDevice and its subclasses
 																	// requires <IOKit/usb/IOUSBLib.h>
     matchingDictionary2 = IOServiceMatching(kIOUSBDeviceClassName);
+    matchingDictionary3 = IOServiceMatching(kIOUSBDeviceClassName);
 	
 	// look up toll free bridge in apple documentation... 
 	// discusses Core Foundation vs. Cocoa types that are interchangeable.
@@ -134,6 +138,38 @@ NSMutableArray			*iBuddyDeviceArray;
 		IOServiceAddMatchingNotification(gNotifyPort,				  // notifyPort
 										 kIOFirstMatchNotification,  // notificationType
 										 matchingDictionary2,        // matching
+										 DeviceAdded,				  // callback
+										 NULL,						  // refCon
+										 &gAddedRocketIter			  // notification
+										 );    
+		
+		// Iterate once to get already-present devices and arm the notification    
+		DeviceAdded(NULL, gAddedRocketIter);  
+		
+	}
+	else
+	{
+        NSLog(@"iBuddyControl: could not create matching dictionary1");
+    }
+
+	if (matchingDictionary3)
+    {
+		// Create a CFNumber for the idVendor and set the value in the dictionary
+		numberRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &iBuddy_VendorId_num);
+		if (!numberRef) {
+			NSLog(@"iBuddyControl: could not create CFNumberRef for vendor");
+		}
+		CFDictionarySetValue(matchingDictionary3, CFSTR(kUSBVendorID), numberRef);
+		CFRelease(numberRef);
+		
+		// Create a CFNumber for the idProduct and set the value in the dictionary
+		numberRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &iBuddy_ProductId_3_num);
+		CFDictionarySetValue(matchingDictionary3, CFSTR(kUSBProductID), numberRef);
+		CFRelease(numberRef);
+		
+		IOServiceAddMatchingNotification(gNotifyPort,				  // notifyPort
+										 kIOFirstMatchNotification,  // notificationType
+										 matchingDictionary3,        // matching
 										 DeviceAdded,				  // callback
 										 NULL,						  // refCon
 										 &gAddedRocketIter			  // notification
