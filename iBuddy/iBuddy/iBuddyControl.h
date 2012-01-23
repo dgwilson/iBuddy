@@ -83,6 +83,7 @@ void printInterpretedError(char *s, IOReturn err);
 - (id)ReleaseiBuddy;
 - (id)controliBuddy:(NSNumber*)code;
 
+- (void)flapWingsCommand:(NSTimer *)timer;
 
 
 @end

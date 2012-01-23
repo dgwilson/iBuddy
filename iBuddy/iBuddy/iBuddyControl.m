@@ -1145,11 +1145,17 @@ void printInterpretedError(char *s, IOReturn err)
 {
 	reqBuffer[7] &= 0xF3;
 	if ([sender intValue])
-		reqBuffer[7] |= 0x04;
+	{
+		// alternate high / low flap
+		[self flapWingsCommand:nil];
+	}
 	else
+	{
+		reqBuffer[7] |= 0x04;	// turn both bits off
 		reqBuffer[7] |= 0x08;
-	UInt8 control = 0;
-	[self sendCommandsToDevice:control];
+		UInt8 control = 0;
+		[self sendCommandsToDevice:control];
+	}
 }
 
 - (IBAction)bodyAction:(id)sender
@@ -1192,6 +1198,14 @@ void printInterpretedError(char *s, IOReturn err)
 - (void)flapWingsRepeatEnd:(NSTimer *)timer
 {
 	[flapWingsTimer invalidate];
+	
+	// turn the thing OFF!
+	reqBuffer[7] &= 0xF3;		
+	reqBuffer[7] |= 0x04;
+	reqBuffer[7] |= 0x08;
+	UInt8 control = 0;
+	[self sendCommandsToDevice:control];
+
 }
 
 - (IBAction)flapWingsAction:(id)sender
@@ -1201,7 +1215,7 @@ void printInterpretedError(char *s, IOReturn err)
 		flapWingsTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(flapWingsCommand:) userInfo:nil repeats:YES];
 	} else
 	{
-		[flapWingsTimer invalidate];
+		[self flapWingsRepeatEnd:nil];
 	}
 }
 
