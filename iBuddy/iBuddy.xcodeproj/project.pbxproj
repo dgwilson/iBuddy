@@ -12,6 +12,7 @@
 		E0131545143FF51B00E8A09C /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = E0131544143FF51B00E8A09C /* common.c */; };
 		E02356321448D3CF0087E307 /* iBuddyCmdUtility.sh in Resources */ = {isa = PBXBuildFile; fileRef = E02356311448D3CF0087E307 /* iBuddyCmdUtility.sh */; };
 		E02356341448D8FE0087E307 /* iBuddycmd in CopyFiles */ = {isa = PBXBuildFile; fileRef = E0F0B10114255B4E00F1B28B /* iBuddycmd */; };
+		E0278D9314CD365700A33594 /* iChat-iBuddy-Respond.applescript in Sources */ = {isa = PBXBuildFile; fileRef = E0278D9214CD365700A33594 /* iChat-iBuddy-Respond.applescript */; };
 		E050D385140E1A79004CAE37 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E050D384140E1A79004CAE37 /* Cocoa.framework */; };
 		E050D38F140E1A79004CAE37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E050D38D140E1A79004CAE37 /* InfoPlist.strings */; };
 		E050D391140E1A79004CAE37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E050D390140E1A79004CAE37 /* main.m */; };
@@ -92,6 +93,7 @@
 		E0131544143FF51B00E8A09C /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
 		E02356311448D3CF0087E307 /* iBuddyCmdUtility.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = iBuddyCmdUtility.sh; sourceTree = "<group>"; };
 		E026107E144190C2000865AF /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		E0278D9214CD365700A33594 /* iChat-iBuddy-Respond.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = "iChat-iBuddy-Respond.applescript"; sourceTree = "<group>"; };
 		E050D380140E1A79004CAE37 /* iBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E050D384140E1A79004CAE37 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E050D387140E1A79004CAE37 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -249,6 +251,7 @@
 		E050D38B140E1A79004CAE37 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E0278D9214CD365700A33594 /* iChat-iBuddy-Respond.applescript */,
 				E06831E214160DF000AC1EF0 /* iBuddy_Animated.gif */,
 				E050D38C140E1A79004CAE37 /* iBuddy-Info.plist */,
 				E050D38D140E1A79004CAE37 /* InfoPlist.strings */,
@@ -501,6 +504,7 @@
 				E05BE5011414B7EE00C416CF /* iBuddyControl.m in Sources */,
 				E05BE5051414BA3F00C416CF /* iBuddyDevice.m in Sources */,
 				E0131545143FF51B00E8A09C /* common.c in Sources */,
+				E0278D9314CD365700A33594 /* iChat-iBuddy-Respond.applescript in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -53,6 +53,26 @@ and see below for other commands that can be used.
 		 body move right	-a bmr
 		 body move rotate	-a bmo
  
+
+================= 
+iChat integration
+-----------------
+
+1. Copy the file iChat-iBuddy-Respond.applescript into ~/Library/Scripts/iChat/
+- the file can be found with the Resource folder of the application iBuddy.app (get there by right clicking on the application and choosing show package contents).
+2. Run iChat
+3. go to Preferences
+3. select Alerts
+4. Now configure how you would like iChat to operate based on the following example, configure for each event
+	a. select Event "Message Received"
+	b. tick Run AppleScript script:
+	c. choose Apple Script "iChat-iBuddy-Respond.applescript" - this should be available for selection if installed correctly above
+
+5. Make sure iBuddy is connected and installed.
+6. This working is based on you having run the iBuddy program, installed the OS Driver and installed the Commandline program as well. Remember you can confirm the iBuddy hardware is working through the iBuddy.app program.
+
+
+
  
 Development note
 - This project is set up such that compiling iBuddy will compile all of its dependant components as they are included in the GUI application. The only component that needs to be distributed form the build is the GUI application.
